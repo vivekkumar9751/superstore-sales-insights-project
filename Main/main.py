@@ -50,8 +50,11 @@ print(df)
 # NOW MOVING TO EDA
 # IMPORTING LIBRARIES
 
-import matplotlib.pyplot as mlt
+import matplotlib.pyplot as plt
 import seaborn as sns
+
+
+#Total KPIs – How big is the business?
 
 
 # Sales & Profit Summary
@@ -60,5 +63,15 @@ print("Total Profit: ", df['Profit'].sum())
 
 # Total order also
 print("Total order : ",df['Order ID'].nunique())
+#
 
 # Sales by Category and Sub-Category
+# here we are finding the highest and lowest category sales by grouping the two 
+
+category_sales = df.groupby('Category')['Sales'].sum().sort_values()
+category_sales.plot(kind="bar", color='steelblue', title='Sales by Category')
+plt.ylabel("Total Sales")     # Changed from xlabel to ylabel (as categories are on x-axis)
+plt.xlabel("Category")
+plt.xticks(rotation=0)       # Optional: rotates x-axis labels for better readability
+plt.tight_layout() 
+plt.show()
