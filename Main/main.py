@@ -67,11 +67,40 @@ print("Total order : ",df['Order ID'].nunique())
 
 # Sales by Category and Sub-Category
 # here we are finding the highest and lowest category sales by grouping the two 
-
+print("Sales per subcategory")
 category_sales = df.groupby('Category')['Sales'].sum().sort_values()
 category_sales.plot(kind="bar", color='steelblue', title='Sales by Category')
 plt.ylabel("Total Sales")     # Changed from xlabel to ylabel (as categories are on x-axis)
 plt.xlabel("Category")
 plt.xticks(rotation=0)       # Optional: rotates x-axis labels for better readability
 plt.tight_layout() 
+plt.show()
+# Sales by sub-category 
+# here we also plot a graph for sales and sub-cat
+
+# Group by 'Sub-Category', sum 'Sales', and sort values
+subCategory_sales = df.groupby('Sub-Category')['Sales'].sum().sort_values()
+
+# Plot bar chart
+subCategory_sales.plot(kind="bar", color='steelblue', title='Sales by Sub-category')
+
+# Add axis labels
+plt.ylabel("Total Sales")
+plt.xlabel("Sub-Category")
+
+# Rotate x-axis labels
+plt.xticks(rotation=45)
+
+# Adjust layout and display the plot
+plt.tight_layout()
+plt.show()
+
+
+#Region-Wise Profit vs Sales
+region_sales = df.groupby('Region')['Profit','Sales'].sum().sort_values()
+region_sales.plot(kind="bar",title='sales per region')
+plt.ylabel("total sales")
+plt.xlabel("region")
+plt.xticks(rotation=0)
+plt.tight_layout()
 plt.show()
