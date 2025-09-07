@@ -160,3 +160,50 @@ basket_sets = basket.map(encode_units)
 frequent_itemsets = apriori(basket_sets, min_support=0.01, use_colnames=True)
 rules = association_rules(frequent_itemsets, metric="lift", min_threshold=1)
 print("\nAssociation Rules:\n", rules.head())
+
+# ===============================
+# Exporting DataFrames to CSV
+# ===============================
+print("\n=== Exporting DataFrames to CSV ===")
+
+# Exporting the main processed dataframe
+df.to_csv('Reports/processed_superstore.csv', index=False)
+print("Exported processed_superstore.csv")
+
+# Exporting CLV
+clv.to_csv('Reports/customer_lifetime_value.csv', index=False)
+print("Exported customer_lifetime_value.csv")
+
+# Exporting Churn Features
+churn_features.to_csv('Reports/churn_prediction_features.csv', index=False)
+print("Exported churn_prediction_features.csv")
+
+# Exporting Product-Level Insights
+best_selling_products.to_csv('Reports/best_selling_products.csv')
+print("Exported best_selling_products.csv")
+best_selling_subcategories.to_csv('Reports/best_selling_subcategories.csv')
+print("Exported best_selling_subcategories.csv")
+product_profit_discount.to_csv('Reports/product_profit_discount.csv')
+print("Exported product_profit_discount.csv")
+product_turnover.to_csv('Reports/product_turnover.csv')
+print("Exported product_turnover.csv")
+
+# Exporting Trend Analysis
+monthly_sales.to_csv('Reports/monthly_sales_trend.csv')
+print("Exported monthly_sales_trend.csv")
+monthly_orders.to_csv('Reports/monthly_order_seasonality.csv')
+print("Exported monthly_order_seasonality.csv")
+
+# Exporting Regional Analysis
+region_performance.to_csv('Reports/region_performance.csv')
+print("Exported region_performance.csv")
+low_profit_regions.to_csv('Reports/low_profit_regions.csv')
+print("Exported low_profit_regions.csv")
+
+# Exporting Basket/Association Analysis
+frequent_itemsets.to_csv('Reports/frequent_itemsets.csv', index=False)
+print("Exported frequent_itemsets.csv")
+rules.to_csv('Reports/association_rules.csv', index=False)
+print("Exported association_rules.csv")
+
+print("\nAll dataframes exported successfully to the 'Reports' directory.")

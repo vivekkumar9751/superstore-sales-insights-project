@@ -1,0 +1,69 @@
+support,itemsets
+0.14334198442802953,frozenset({'Accessories'})
+0.09003793172289878,frozenset({'Appliances'})
+0.1459373128368936,frozenset({'Art'})
+0.2627270912357756,frozenset({'Binders'})
+0.044719504891195846,frozenset({'Bookcases'})
+0.11499301257736075,frozenset({'Chairs'})
+0.01357556398482731,frozenset({'Copiers'})
+0.04971052106208824,frozenset({'Envelopes'})
+0.04292273906967459,frozenset({'Fasteners'})
+0.17508484727490517,frozenset({'Furnishings'})
+0.06907566380515073,frozenset({'Labels'})
+0.022359752445597923,frozenset({'Machines'})
+0.23777201038131363,frozenset({'Paper'})
+0.16250748652425634,frozenset({'Phones'})
+0.1551207825913356,frozenset({'Storage'})
+0.037332800958275104,frozenset({'Supplies'})
+0.0612896785785586,frozenset({'Tables'})
+0.011978438810141745,"frozenset({'Appliances', 'Accessories'})"
+0.017768017568376922,"frozenset({'Art', 'Accessories'})"
+0.032142144140547016,"frozenset({'Binders', 'Accessories'})"
+0.012777001397484528,"frozenset({'Chairs', 'Accessories'})"
+0.02295867438610501,"frozenset({'Furnishings', 'Accessories'})"
+0.03054501896586145,"frozenset({'Paper', 'Accessories'})"
+0.023158315032940708,"frozenset({'Phones', 'Accessories'})"
+0.020562986624076664,"frozenset({'Storage', 'Accessories'})"
+0.01177879816330605,"frozenset({'Appliances', 'Art'})"
+0.025953284088640446,"frozenset({'Appliances', 'Binders'})"
+0.01597125174685566,"frozenset({'Appliances', 'Furnishings'})"
+0.021760830505090836,"frozenset({'Appliances', 'Paper'})"
+0.015172689159512876,"frozenset({'Appliances', 'Phones'})"
+0.011179876222798962,"frozenset({'Appliances', 'Storage'})"
+0.029946097025354362,"frozenset({'Art', 'Binders'})"
+0.01637053304052705,"frozenset({'Art', 'Chairs'})"
+0.019964064683569576,"frozenset({'Art', 'Furnishings'})"
+0.029946097025354362,"frozenset({'Art', 'Paper'})"
+0.024755440207626274,"frozenset({'Art', 'Phones'})"
+0.019964064683569576,"frozenset({'Art', 'Storage'})"
+0.011179876222798962,"frozenset({'Bookcases', 'Binders'})"
+0.023757236973447796,"frozenset({'Binders', 'Chairs'})"
+0.010780594929127571,"frozenset({'Envelopes', 'Binders'})"
+0.012377720103813137,"frozenset({'Binders', 'Fasteners'})"
+0.03952884807346776,"frozenset({'Furnishings', 'Binders'})"
+0.01637053304052705,"frozenset({'Labels', 'Binders'})"
+0.05490117787981633,"frozenset({'Paper', 'Binders'})"
+0.039728488720303455,"frozenset({'Binders', 'Phones'})"
+0.039728488720303455,"frozenset({'Binders', 'Storage'})"
+0.014174485925334398,"frozenset({'Tables', 'Binders'})"
+0.01976442403673388,"frozenset({'Furnishings', 'Chairs'})"
+0.026552206029147533,"frozenset({'Paper', 'Chairs'})"
+0.017768017568376922,"frozenset({'Phones', 'Chairs'})"
+0.016570173687362747,"frozenset({'Storage', 'Chairs'})"
+0.011379516869634657,"frozenset({'Paper', 'Envelopes'})"
+0.01177879816330605,"frozenset({'Paper', 'Fasteners'})"
+0.011379516869634657,"frozenset({'Labels', 'Furnishings'})"
+0.03533639448991815,"frozenset({'Paper', 'Furnishings'})"
+0.02954681573168297,"frozenset({'Furnishings', 'Phones'})"
+0.02755040926332601,"frozenset({'Furnishings', 'Storage'})"
+0.01597125174685566,"frozenset({'Labels', 'Paper'})"
+0.011579157516470354,"frozenset({'Labels', 'Phones'})"
+0.01217807945697744,"frozenset({'Labels', 'Storage'})"
+0.034937113196246754,"frozenset({'Paper', 'Phones'})"
+0.035536035136753845,"frozenset({'Paper', 'Storage'})"
+0.010780594929127571,"frozenset({'Tables', 'Paper'})"
+0.0233579556797764,"frozenset({'Phones', 'Storage'})"
+0.010381313635456179,"frozenset({'Tables', 'Phones'})"
+0.010181672988620483,"frozenset({'Paper', 'Furnishings', 'Binders'})"
+0.010780594929127571,"frozenset({'Paper', 'Binders', 'Phones'})"
+0.010580954282291874,"frozenset({'Paper', 'Binders', 'Storage'})"
